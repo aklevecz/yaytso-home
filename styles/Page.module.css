@@ -4,11 +4,10 @@
   flex-direction: column;
   /* margin-left: var(--m-md); */
   /* padding: 0px var(--pd-md); */
-  justify-content: center;
-  align-items: center;
   /* max-width: 600px; */
-  height: 95%;
+  /* height: 95%; */
   width: 100%;
+  padding: 0px 10px;
 }
 
 .container > div {
@@ -17,14 +16,25 @@
 
 .header {
   mix-blend-mode: difference;
-  font-size: var(--lg-font);
+  font-size: 5rem;
+  font-weight: bold;
   z-index: 1;
 }
 
 .block {
   mix-blend-mode: difference;
-  font-size: var(--md-font);
+  /* font-size: var(--md-font); */
+  font-size: 4rem;
   width: 100%;
   z-index: 1;
-  text-align: center;
+}
+
+.block__bg {
+  margin-top: 20px;
+  background-color: black;
+  z-index: 1;
+  font-size: 2rem;
+  padding: 10px;
+  max-width: 600px;
+  border: 4px solid white;
 }

@@ -1,0 +1,23 @@
+.container {
+  max-width: 500px;
+  margin: auto;
+  z-index: 1;
+  color: white;
+  mix-blend-mode: difference;
+  position: relative;
+  padding: 10px;
+}
+
+.title {
+  font-size: var(--lg-font);
+  font-weight: bold;
+}
+
+.block {
+  font-size: var(--txt-block);
+  line-height: var(--txt-block-lh);
+}
+
+.container img {
+  mix-blend-mode: normal;
+}

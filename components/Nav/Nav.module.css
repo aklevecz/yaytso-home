@@ -1,0 +1,45 @@
+.container {
+  /* position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9; */
+  /* text-align: right; */
+  position: relative;
+  color: white;
+  z-index: 2;
+  height: 5%;
+  /* padding: 20px 20px 0px; */
+}
+
+.toggle {
+  mix-blend-mode: difference;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  border: none;
+  z-index: 3;
+  transition: border-radius 500ms;
+}
+
+.link_list {
+  background-color: white;
+  color: black;
+  font-size: var(--md-font);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  z-index: 2;
+  width: 300px;
+  padding: 30px;
+}
+
+.link_list__desk {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  margin-top: var(--m-sm);
+}

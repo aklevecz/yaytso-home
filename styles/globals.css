@@ -1,9 +1,37 @@
+:root {
+  --lg-font: 8rem;
+  --md-font: 4rem;
+
+  --m-sm: 4px;
+  --m-md: 8px;
+
+  --pd-md: 10px;
+
+  --txt-block: 1.5rem;
+  --txt-block-lh: 1.75rem;
+}
+
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Stolzl;
+  font-weight: normal;
+  overflow-x: hidden;
+  /* min-height: 100vh; */
+  background-color: red;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
 }
 
 a {
@@ -13,4 +41,20 @@ a {
 
 * {
   box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.difference {
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  font-size: var(--lg-font);
+  font-weight: bold;
 }
