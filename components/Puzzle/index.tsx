@@ -49,7 +49,7 @@ export default function Puzzle({ triggerSolve }: { triggerSolve: () => void }) {
     setSelectedItems(newItems);
   };
   return (
-    <div>
+    <div style={{ padding: 10 }}>
       {dim.map((row) => {
         return (
           <div key={row} className={styles.row}>

@@ -9,8 +9,11 @@ export default function Studio() {
         <div className={styles.block}>
           the studio is located in sunny Los Angeles California
         </div>
-        <div className={styles.block}>2684 Lacy St. #109</div>
-        <div className={styles.block}>Los Angeles CA 90031</div>
+        {/* <div className={styles.block}>2684 Lacy St. #109</div>
+        <div className={styles.block}>Los Angeles CA 90031</div> */}
+        <div className={styles.block}>
+          Currently open for people to come by, hang out, work, or do whatever
+        </div>
       </div>
       <BackgroundDynamic />
     </>

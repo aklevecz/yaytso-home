@@ -60,9 +60,11 @@ export default function Mobile() {
             style={{ width: linkListDims.width, height: linkListDims.height }}
           >
             <Links />
-            <div style={{ width: "30%", height: "20%", overflow: "hidden" }}>
-              <EgglineIcon color="black" />
-            </div>
+            <Link href="/">
+              <div style={{ width: "30%", height: "20%", overflow: "hidden" }}>
+                <EgglineIcon color="black" />
+              </div>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

@@ -58,3 +58,16 @@ a {
   font-size: var(--lg-font);
   font-weight: bold;
 }
+
+button {
+  background: white;
+  font-family: "Stolzl";
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-radius: 0px;
+  padding: 7px 20px;
+  border: none;
+  margin: 20px auto;
+  display: block;
+  cursor: pointer;
+}

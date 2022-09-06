@@ -2,8 +2,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const links = [
-  { path: "/", name: "Home" },
-  // { path: "/blog", name: "Blog" },
+  { path: "https://yaytso.art", name: "Create" },
+  { path: "https://air.yaytso.art/eggs/la", name: "Pizza" },
   { path: "/studio", name: "Studio" },
   // { path: "/map", name: "Map" },
   { path: "/about", name: "About" },
