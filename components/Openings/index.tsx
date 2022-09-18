@@ -47,19 +47,25 @@ export default function Openings() {
             <div style={{ marginTop: 20 }}>
               <div className={styles.job_subtitle}>Responsibilities</div>
               {opening.responsibilities.map((responsibility) => (
-                <li className={styles.job_responsibility}>{responsibility}</li>
+                <li key={responsibility} className={styles.job_responsibility}>
+                  {responsibility}
+                </li>
               ))}
             </div>
             <div style={{ marginTop: 20 }}>
               <div className={styles.job_subtitle}>Skills</div>
               {opening.skills.map((skill) => (
-                <li className={styles.job_responsibility}>{skill}</li>
+                <li key={skill} className={styles.job_responsibility}>
+                  {skill}
+                </li>
               ))}
             </div>
             <div style={{ marginTop: 20 }}>
               <div className={styles.job_subtitle}>Nice to have skills</div>
               {opening.skillsNice.map((skill) => (
-                <li className={styles.job_responsibility}>{skill}</li>
+                <li key={skill} className={styles.job_responsibility}>
+                  {skill}
+                </li>
               ))}
             </div>
             <div className={styles.job_description}>{opening.compensation}</div>
