@@ -22,7 +22,7 @@
 
 .header {
   mix-blend-mode: difference;
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: bold;
   z-index: 1;
 }
@@ -44,8 +44,16 @@
 .block__bg {
   margin: auto;
   background-color: black;
+  /* background-color: white; */
   font-size: 2rem;
   padding: 16px;
   max-width: 600px;
   border: 4px solid white;
+}
+
+.solid__bg {
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: 5px solid black;
 }

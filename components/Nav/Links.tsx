@@ -6,6 +6,7 @@ const links = [
   { path: "https://air.yaytso.art/eggs/la", name: "Pizza" },
   { path: "/studio", name: "Studio" },
   // { path: "/map", name: "Map" },
+  { path: "/openings", name: "Openings" },
   { path: "/about", name: "About" },
 ];
 

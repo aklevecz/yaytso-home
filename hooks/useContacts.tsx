@@ -9,10 +9,18 @@ export default function useContact() {
     discord: string;
   } | null>(null);
 
-  const onFetchContact = () =>
-    setTimeout(() => fetchContact().then(setContact), 3000);
+  const [fetching, setFetching] = useState(false);
 
-  const fetching = !contact;
-  console.log(contact);
+  const onFetchContact = () => {
+    setFetching(true);
+    setTimeout(() => {
+      fetchContact().then((contact) => {
+        setContact(contact);
+        setFetching(false);
+      });
+    }, 3000);
+  };
+
+  // const fetching = !contact;
   return { contact, fetching, onFetchContact };
 }

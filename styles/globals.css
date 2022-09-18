@@ -55,7 +55,8 @@ a {
 }
 
 .title {
-  font-size: var(--lg-font);
+  /* font-size: var(--lg-font); */
+  font-size: var(--md-font);
   font-weight: bold;
 }
 
@@ -67,7 +68,8 @@ button {
   border-radius: 0px;
   padding: 7px 20px;
   border: none;
-  margin: 20px auto;
+  /* margin: 20px auto; */
   display: block;
   cursor: pointer;
+  color: black;
 }

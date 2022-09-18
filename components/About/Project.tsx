@@ -11,6 +11,7 @@ const Project = ({ title, description, link }: Props) => (
     <div className={styles.info_block}>
       <div className={styles.description}>{description}</div>
       <button
+        className={styles.button}
         onClick={() => {
           window.open(link.href, "_blank");
         }}

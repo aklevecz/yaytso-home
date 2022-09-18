@@ -6,7 +6,15 @@
   font-size: 1.5rem;
   font-weight: bold;
 }
+
+.button {
+  margin-top: 20px;
+}
+
 @media screen and (min-width: 768px) {
+  .button {
+    margin-top: 0px;
+  }
   .info_block {
     display: flex;
   }
