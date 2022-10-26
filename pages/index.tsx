@@ -1,9 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Script from "next/script";
 import BackgroundDynamic from "../components/Background/Dynamic";
 import EgglineIcon from "../components/Icons/Eggline";
 import styles from "../styles/Home.module.css";
 
+const GDPR = 1;
+const GDPR_PD = 1;
+const GDPR_CONSENT_278 = 1;
 const Home: NextPage = () => {
   return (
     <>
@@ -30,6 +34,7 @@ const Home: NextPage = () => {
         {/* <div className={styles.block}>MEDIA</div> */}
       </div>
       <BackgroundDynamic />
+      <Script src="https://pixel.adsafeprotected.com/rjss/st/1170009/66570547/skeleton.js" />
     </>
   );
 };
