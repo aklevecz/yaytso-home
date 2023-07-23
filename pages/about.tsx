@@ -14,23 +14,27 @@ const projects: any = {
       "A tool for creating unique NFT eggs styled by you. Create an egg and pin it to IPFS. If you love it-- make it official as a NFT",
     link: { href: "https://yaytso.art", title: "Make an Egg" },
   },
-  airYaytso: {
-    title: "Air Yaytso",
-    description:
-      "Hunt for NFTs and win prizes. No wallet necessary, just running around and exploring-- maybe you'll even win a pizza.",
-    link: { href: "https://air.yaytso.art", title: "Start hunting" },
+  // airYaytso: {
+  //   title: "Air Yaytso",
+  //   description:
+  //     "Hunt for NFTs and win prizes. No wallet necessary, just running around and exploring-- maybe you'll even win a pizza.",
+  //   link: { href: "https://air.yaytso.art", title: "Start hunting" },
+  // },
+  bao: {
+    title: "Bao",
+    description: "Chat with Bao and learn about his obsession with chicken",
+    link: { href: "https://baos.haus", title: "Bao's Haus" },
   },
   cmyRaptor: {
     title: "CMYRaptor",
-    description:
-      "Make a randomly colored CMYK Raptor. Some day they will give you access to some special events :)",
+    description: "Make a randomly colored CMYK Raptor. Some day they will give you access to some special events :)",
     link: { href: "https://cmy.raptor.pizza", title: "Mint a Raptor" },
   },
   mottoverse: {
     title: "MOTTOVERSE (WIP)",
     description:
       "Place your motto out in space. Buy letters, build words, it's a wild tokenized word game of sorts. Make sure you are connected to Polygon.",
-    link: { href: "https://mtvrs.com", title: "Stake your motto" },
+    link: { href: "https://mttvrs.com", title: "Stake your motto" },
   },
 };
 
@@ -87,11 +91,7 @@ export default function About() {
         <div className={styles.block__bg_wrapper}>
           <div className={styles.block__bg}>
             <div style={{ fontWeight: "bold" }}>Want to contact us?</div>
-            <div
-              style={{ fontWeight: "bold", color: "red", margin: "10px 0px" }}
-            >
-              Make a Y with the dots
-            </div>
+            <div style={{ fontWeight: "bold", color: "red", margin: "10px 0px" }}>Make a Y with the dots</div>
 
             {!isWinner && <Puzzle triggerSolve={() => setIsWinner(true)} />}
             {isWinner && contact.fetching && <BlackWrappedSpinner />}

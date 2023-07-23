@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 const links = [
   { path: "https://yaytso.art", name: "Create" },
-  { path: "https://air.yaytso.art/eggs/la", name: "Pizza" },
+  // { path: "https://air.yaytso.art/eggs/la", name: "Pizza" },
   { path: "/studio", name: "Studio" },
   // { path: "/map", name: "Map" },
   // { path: "/openings", name: "Openings" },
