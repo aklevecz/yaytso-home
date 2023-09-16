@@ -1,7 +1,6 @@
 import BackgroundDynamic from "../Background/Dynamic";
 import styles from "./Openings.module.css";
 import pageStyles from "../../styles/Page.module.css";
-import baoImg from "./baobao.jpg";
 import useContact from "../../hooks/useContacts";
 
 const openings = [
@@ -17,12 +16,7 @@ const openings = [
       "Communicating with and discovering potential partners",
       "Helping organize and promote events",
     ],
-    skills: [
-      "Communication",
-      "Design",
-      "Project management",
-      "Knowledge or interest in web3",
-    ],
+    skills: ["Communication", "Design", "Project management", "Knowledge or interest in web3"],
     skillsNice: ["Illustration", "AirTable", "Notion", "Adobe products"],
     compensation:
       "You will be paid $25/hr with an expected 20hrs per week. You will receive a cut of the revenue for events that you help produce. You are welcome to do a majority of your work from wherever you please, but you may always come to the studio when you need a nice spot to focus on your work and/or studies. When you are at the studio you will have access to free coffee, snacks, and lunch.",
@@ -41,9 +35,7 @@ export default function Openings() {
           <div className={pageStyles.block__bg}>
             <div className={styles.job_title}>{opening.jobTitle}</div>
             <div className={styles.job_description}>{opening.jobCta}</div>
-            <div className={styles.job_description}>
-              {opening.jobDescription}
-            </div>
+            <div className={styles.job_description}>{opening.jobDescription}</div>
             <div style={{ marginTop: 20 }}>
               <div className={styles.job_subtitle}>Responsibilities</div>
               {opening.responsibilities.map((responsibility) => (
@@ -70,7 +62,7 @@ export default function Openings() {
             </div>
             <div className={styles.job_description}>{opening.compensation}</div>
             <div className={styles.job_description}>{opening.dog}</div>
-            <img className={styles.img} src={baoImg.src} />
+            <img className={styles.img} src={"images/baobao.jpg"} alt="bao" />
             {!contact && (
               <button onClick={onFetchContact} style={{ margin: "30px auto" }}>
                 {fetching ? "..." : "Apply"}
@@ -78,8 +70,7 @@ export default function Openings() {
             )}
             {contact && (
               <div style={{ fontSize: "1rem", padding: 20 }}>
-                Send your resume and brief cover letter to{" "}
-                <a href={`mailto:${contact.email}`}>{contact.email}</a>
+                Send your resume and brief cover letter to <a href={`mailto:${contact.email}`}>{contact.email}</a>
               </div>
             )}
           </div>

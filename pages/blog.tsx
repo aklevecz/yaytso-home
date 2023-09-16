@@ -7,7 +7,6 @@ import { shimmer, toBase64 } from "../components/Post/utils";
 import styles from "../styles/Blog.module.css";
 
 export default function BlogPage({ allPosts }: any) {
-  console.log(allPosts);
   return (
     <>
       <div className="difference container">
@@ -22,9 +21,7 @@ export default function BlogPage({ allPosts }: any) {
                     width="500px"
                     height="500px"
                     placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                      shimmer(700, 475)
-                    )}`}
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
                   />
                 </div>
               </Link>
@@ -38,9 +35,7 @@ export default function BlogPage({ allPosts }: any) {
                     width="500px"
                     height="500px"
                     placeholder="blur"
-                    blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                      shimmer(700, 475)
-                    )}`}
+                    blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
                   />
                 </div>
               </Link>

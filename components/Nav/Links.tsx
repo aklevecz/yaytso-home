@@ -15,8 +15,8 @@ export default function Links() {
   return (
     <>
       {links.map((link) => (
-        <Link key={link.path} href={link.path}>
-          <span
+        <Link key={link.path} href={link.path} passHref>
+          <a
             style={{
               color: router.asPath === link.path ? "red" : "white",
               mixBlendMode: "difference",
@@ -24,7 +24,7 @@ export default function Links() {
             }}
           >
             {link.name}
-          </span>
+          </a>
         </Link>
       ))}
       {/* <Link href="/">Home</Link>

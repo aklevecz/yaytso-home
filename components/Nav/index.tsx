@@ -7,7 +7,7 @@ export default function Nav() {
   const { isMobile } = useDevice();
 
   return (
-    <div
+    <nav
       className={styles.container}
       style={{
         position: isMobile ? "unset" : "relative",
@@ -16,6 +16,6 @@ export default function Nav() {
     >
       {!isMobile && <Desk />}
       {isMobile && <Mobile />}
-    </div>
+    </nav>
   );
 }

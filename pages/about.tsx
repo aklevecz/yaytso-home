@@ -116,7 +116,7 @@ export default function About() {
         <div className={styles.block__bg_wrapper}>
           <div className={styles.block__bg} style={{ position: "relative" }}>
             <div style={{ position: "absolute", left: 25, top: 16, fontSize: 40, color: "white" }}>come say hi!</div>
-            <img style={{ width: "100%", height: "100%" }} src="/images/ari-bao.jpg" />
+            <img style={{ width: "100%", height: "100%" }} src="/images/ari-bao.jpg" alt="ari & bao" />
           </div>
         </div>
         <div className={styles.block__bg_wrapper}>
