@@ -6,6 +6,7 @@ import Puzzle from "../components/Puzzle";
 import useContact from "../hooks/useContacts";
 import styles from "../styles/Page.module.css";
 import Image from "next/image";
+import Head from "next/head";
 
 type Project = {
   title: string;
@@ -66,8 +67,15 @@ export default function About() {
   }, [isWinner]);
   return (
     <>
+      <Head>
+        <title>ABOUT</title>
+        <meta property="description" content="learn about yaytso gallery" />
+        <meta property="og:title" content="ABOUT" key="title" />
+        <meta property="og:description" content="learn about yaytso gallery" />
+        <meta property="og:image" content="og-image.png" />
+      </Head>
       <div className={styles.container}>
-        <div className={styles.header}>ABOUT</div>
+        <h1 className={styles.header}>ABOUT</h1>
         <div className={styles.block__bg_wrapper}>
           <div
             className={styles.block__bg}

@@ -9,10 +9,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>YAYTSO</title>
-        <meta
-          name="description"
-          content="YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO YAYTSO "
-        />
+        <meta name="description" content="YAYTSO Gallery - an interactive art space located in Los Angeles" />
         <meta property="og:image" content="og-image.png" />
       </Head>
       <div className={styles.container}>
