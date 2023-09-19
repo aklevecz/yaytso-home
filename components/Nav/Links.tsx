@@ -8,6 +8,7 @@ const links = [
   // { path: "/map", name: "Map" },
   // { path: "/openings", name: "Openings" },
   { path: "/about", name: "About" },
+  { path: "/dreams", name: "Dreams" },
 ];
 
 export default function Links() {

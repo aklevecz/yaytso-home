@@ -5,7 +5,6 @@ import BlackWrappedSpinner from "../components/Loaders/BlackWrappedSpinner";
 import Puzzle from "../components/Puzzle";
 import useContact from "../hooks/useContacts";
 import styles from "../styles/Page.module.css";
-import Image from "next/image";
 import Head from "next/head";
 
 type Project = {
@@ -18,7 +17,7 @@ const projects: { [key: string]: Project } = {
   nftCreator: {
     title: "Yaytso",
     description:
-      "A tool for creating unique NFT eggs styled by you. Create an egg and pin it to IPFS. If you love it-- make it official as a NFT",
+      "Create unique NFT eggs with your own touch. Pin it to IPFS to make it last forever in decentralzied fashion. If you love it-- make it official as a NFT",
     link: { href: "https://yaytso.art", title: "Make an Egg" },
   },
   flowers: {
@@ -115,7 +114,6 @@ export default function About() {
         </div>
         <div className={styles.block__bg_wrapper}>
           <div className={styles.block__bg} style={{ position: "relative" }}>
-            <div style={{ position: "absolute", left: 25, top: 16, fontSize: 40, color: "white" }}>come say hi!</div>
             <img style={{ width: "100%", height: "100%" }} src="/images/ari-bao.jpg" alt="ari & bao" />
           </div>
         </div>
