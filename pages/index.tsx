@@ -5,6 +5,8 @@ import EgglineIcon from "../components/Icons/Eggline";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
+  // const title = 'яйцо'
+  const title = "yaytso";
   return (
     <>
       <Head>
@@ -13,7 +15,7 @@ const Home: NextPage = () => {
         <meta property="og:image" content="og-image.png" />
       </Head>
       <div className={styles.container}>
-        <div className={styles.header}>яйцо</div>
+        <div className={styles.header}>{title}</div>
         <div
           style={{
             height: "20%",

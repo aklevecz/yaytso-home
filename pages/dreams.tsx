@@ -1,10 +1,6 @@
-import fs from "fs";
-import Link from "next/link";
 import BackgroundDynamic from "../components/Background/Dynamic";
 import styles from "../styles/Page.module.css";
 import Head from "next/head";
-import { remark } from "remark";
-import html from "remark-html";
 import remarkParse from "remark-parse";
 import remarkHtml from "remark-html";
 import path from "path";
@@ -26,7 +22,7 @@ export default function Studio({ content }: any) {
       <div className={styles.container}>
         <h1 className={styles.header}>DREAMS</h1>
         <div
-          style={{ position: "absolute", zIndex: 1, top: 80, background: "black", padding: 20, left: 0 }}
+          style={{ position: "absolute", zIndex: 1, top: 100, background: "black", padding: 20, left: 0 }}
           dangerouslySetInnerHTML={{ __html: content }}
         />
       </div>
@@ -43,7 +39,6 @@ export async function getStaticProps({ params, preview = false }: any) {
     // @ts-ignore
     .use(remarkHtml)
     .process(await read(dreamPath));
-  console.log(file);
   return {
     props: {
       content: String(file),

@@ -9,6 +9,7 @@ const links = [
   // { path: "/openings", name: "Openings" },
   { path: "/about", name: "About" },
   { path: "/dreams", name: "Dreams" },
+  { path: "/show", name: "Show" },
 ];
 
 export default function Links() {
